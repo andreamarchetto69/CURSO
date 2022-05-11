@@ -294,7 +294,7 @@ aside {
 
 :link { 
      size: 50px;
-     content: counter(red);
+     color: rgb(2, 68, 6);
 }
 
 a:visited { 
