@@ -116,7 +116,8 @@ header {
     background-size: contain no-repeat center;
 }
 
-h1 {
+h1 { 
+    padding-top: 3%;
     color:darkred;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -166,6 +167,10 @@ a:visited {
     color: rgb(2, 168, 13);
 }
 
+nav { 
+    padding-top: 2%;
+}
+
 .navrecetas li {
     display: inline;
     padding: 0.5rem 2rem;
@@ -178,6 +183,7 @@ a:visited {
     background-color: rgb(253, 211, 218);
     flex-grow: wrap;
 }
+
 @media screen and (max-width:700px) {
     .navrecetas li {
         display: inline;
@@ -248,9 +254,8 @@ a:visited {
 section { 
     width: 45vw;
     background-color: beige;
-    padding: 30px;
+    padding: 5%;
     display: flex;
-    align-items: flex-end;
     justify-content: left;
     text-align: justify;
     border-top: 12Px solid rgb(243, 142, 159);
@@ -326,7 +331,7 @@ bdi {
 }
 
 h6 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: black;
     text-align: justify;
 }
@@ -423,6 +428,50 @@ aside {
     justify-content: center;
 }
 
+/*--card*/
+
+.container-fluid { 
+    background-color: rgb(121, 199, 250);
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 12Px solid rgb(4, 118, 194);
+    box-shadow: 5px 8px 12px black;
+}
+
+.card { 
+    background-color: rgb(169, 221, 255);
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 12Px solid rgb(4, 118, 194);
+    box-shadow: 5px 8px 12px black;
+}
+
+.card img:hover { 
+    width: 100%;
+    border: 10px solid pink;
+    padding: 0%;
+}
+
+img { 
+    display: flex;
+    justify-content: center;
+}
+
+/*--end card*/
+
+
 /*--footer*/
 .footer { 
     width: 100%;
@@ -431,12 +480,12 @@ aside {
 
 .footer .columna-1 { 
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 45px 45px;
 }
 
 .footer .columna-1 .boxcontenido { 
@@ -445,12 +494,13 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5%;
 }
 
 .footer .columna-1 .boxcontenido img { 
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 150px;
 }
 
 .footer .columna-1 .box h2 { 
@@ -576,7 +626,6 @@ textarea {
         border-top: 12Px solid rgb(243, 142, 159);
         box-shadow: 5px 8px 12px black;
         flex-wrap: wrap;
-
     }
 }
 
@@ -604,12 +653,34 @@ textarea {
 
 @media screen and (max-width:800px) { 
     .footer .columna-1 { 
-        width: 90%;
+        width: 100vw;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
-        padding: 35px 0px;
+        padding: 35px 45px;
+    } 
+    .box { 
+        width: 66%;
+    }
+}
+
+@media screen and (min-width:2560px) { 
+    .footer { 
+        width: 99.3vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 45px;
     } 
 }
+
+@media screen and (min-width:2560px) { 
+    .container-fluid { 
+        width: 95%;
+    }
+    .card { 
+        margin: 0px 160px 0px 135px;
+    }
+}
+
 
 /*mobile first*/
     body {font-size: 15px;
