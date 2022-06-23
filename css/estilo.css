@@ -167,6 +167,21 @@ a:visited {
     color: rgb(2, 168, 13);
 }
 
+button { 
+    display: flex;
+    padding: .5%;
+    margin-top: .8%;
+    margin-bottom: .8%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+    background-color: #a750bd;
+}
+
 nav { 
     padding-top: 2%;
 }
@@ -539,6 +554,20 @@ img {
     font-size: 5px;
 } 
 
+.footer .columna-2 .autor { 
+    display: inline;
+    padding: 1%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+    background-color: #a750bd;
+    margin-bottom: .3%;
+}
+
 form {
     float: left;
     padding-left: 30px;
@@ -548,6 +577,8 @@ label {
     width: auto;
     text-align: right;
 }
+
+
 
 .input,textarea {
  /* Tipo de letra monoespaciada */
