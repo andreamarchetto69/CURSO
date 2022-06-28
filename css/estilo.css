@@ -167,21 +167,6 @@ a:visited {
     color: rgb(2, 168, 13);
 }
 
-button { 
-    display: flex;
-    padding: .5%;
-    margin-top: .8%;
-    margin-bottom: .8%;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-    cursor: pointer;
-    background-color: #a750bd;
-}
-
 nav { 
     padding-top: 2%;
 }
@@ -265,6 +250,14 @@ nav {
         flex-wrap: wrap;
     }
 }
+
+
+.oscuro { 
+    background-color: #1f1f1f; 
+    color: white; 
+}
+
+
 
 section { 
     width: 45vw;
@@ -554,20 +547,6 @@ img {
     font-size: 5px;
 } 
 
-.footer .columna-2 .autor { 
-    display: inline;
-    padding: 1%;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-    cursor: pointer;
-    background-color: #a750bd;
-    margin-bottom: .3%;
-}
-
 form {
     float: left;
     padding-left: 30px;
@@ -673,12 +652,12 @@ textarea {
         margin-left: 3%;
         padding: 25px;
         flex-wrap: wrap;
-        overflow: scroll;
+        overflow: auto;
         border-top: 12Px solid rgb(163, 148, 15);
         box-shadow: 5px 8px 12px black;
     }
     b{
-      width: 100vw;
+      width: 100%;
     }
 }
 
