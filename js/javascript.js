@@ -1,5 +1,5 @@
-function cambiarModo() { 
-    var cuerpoweb = document.querySelector('section');
+﻿function cambiarModo() { 
+    var cuerpoweb = document.querySelector('section1');
     cuerpoweb.classList.toggle("oscuro");
 }
 
